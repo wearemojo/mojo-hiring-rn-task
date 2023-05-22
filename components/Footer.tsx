@@ -1,4 +1,5 @@
 import { StyleSheet, View, Text, Linking } from "react-native";
+
 import { nanoid } from "./nanoid";
 
 const CAREERS_URL = String(new URL("/careers", "https://mojo.so"));
@@ -18,10 +19,10 @@ const Footer = () => {
 
 const styles = StyleSheet.create({
 	root: {
-		flexDirection: "row",
-		justifyContent: "space-between",
+		gap: 5,
 	},
 	randomId: {
+		fontSize: 10,
 		opacity: 0.3,
 	}
 });
