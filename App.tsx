@@ -33,8 +33,9 @@ export default function App() {
 								<Text style={[styles.textBold, styles.textItalic]}>
 									&lt;Stack /&gt;
 								</Text>{" "}
-								component for applying consistent spacing values, and use it to
-								replace the use of all &lt;View /&gt; elements that include{" "}
+								component for applying consistent spacing values to child
+								components, use it to replace the use of all &lt;View /&gt;
+								elements that include{" "}
 								<Text style={styles.textItalic}>block*</Text> styles
 								{/**
 								 * For an example of a <Stack /> component see:
@@ -55,7 +56,7 @@ export default function App() {
 							</Text>
 							{/**
 							 * Install the "Expo Go" app on your own mobile device, you should
-               * then be able to run by scanning the QR code from the CLI
+							 * then be able to run by scanning the QR code from the CLI
 							 */}
 						</View>
 					</View>
