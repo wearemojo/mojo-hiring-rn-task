@@ -10,9 +10,8 @@ const Footer = () => {
 			<Text onPress={() => Linking.openURL(CAREERS_URL)}>
 				See more @ {CAREERS_URL}
 			</Text>
-			{/** DO NOT REMOVE */}
+			{/** DO NOT REMOVE OR MODIFY THE NEXT LINE */}
 			<Text style={styles.randomId}>{nanoid()}</Text>
-			{/** /DO NOT REMOVE */}
 		</View>
 	);
 };
