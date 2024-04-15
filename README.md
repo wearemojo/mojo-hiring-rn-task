@@ -1,4 +1,4 @@
-# Mojo - Lead RN Task
+# React Native engineering task
 
 Please clone the repo, install node dependencies and run the project with `npm run web`.
 
