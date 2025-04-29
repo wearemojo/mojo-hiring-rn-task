@@ -1,6 +1,6 @@
-import { StatusBar } from "expo-status-bar";
-import { Image, Linking, StyleSheet, Text, View } from "react-native";
-import Footer from "./components/Footer";
+import { StatusBar } from 'expo-status-bar';
+import { Image, Linking, StyleSheet, Text, View } from 'react-native';
+import Footer from './components/Footer';
 
 export default function App() {
 	return (
@@ -8,7 +8,7 @@ export default function App() {
 			<View style={styles.content}>
 				<View style={[styles.block, styles.blockSpacingLarge]}>
 					<View style={styles.header}>
-						<Image source={require("./assets/logo.png")} style={styles.logo} />
+						<Image source={require('./assets/logo.png')} style={styles.logo} />
 						<View>
 							<Text style={[styles.text, styles.textHeading]}>RN Task</Text>
 						</View>
@@ -27,21 +27,21 @@ export default function App() {
 						</View>
 						<View style={styles.block}>
 							<Text style={styles.text}>
-								Build a custom{" "}
+								Build a custom{' '}
 								<Text style={[styles.textBold, styles.textItalic]}>
 									&lt;Stack /&gt;
-								</Text>{" "}
+								</Text>{' '}
 								component for applying consistent spacing values to child
 								components. The component should allow for easy management of
 								layout and spacing, providing a convenient way to stack multiple
 								elements with consistent spacing. Use it to stack all &lt;View
-								/&gt; elements that include{" "}
+								/&gt; elements that include{' '}
 								<Text style={styles.textItalic}>block*</Text> styles. Ensure
 								that the component is robust and capable of efficiently handling
-								a substantial number of complex child elements.{" "}
+								a substantial number of complex child elements.{' '}
 								<Text
 									onPress={() =>
-										Linking.openURL("https://mui.com/material-ui/react-stack/")
+										Linking.openURL('https://mui.com/material-ui/react-stack/')
 									}
 									style={styles.link}
 								>
@@ -89,32 +89,32 @@ const FONT_SIZES = {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		backgroundColor: "#fff",
-		alignItems: "center",
-		justifyContent: "center",
+		backgroundColor: '#fff',
+		alignItems: 'center',
+		justifyContent: 'center',
 	},
 	content: {
-		width: "100%",
+		width: '100%',
 		maxWidth: 800,
 		padding: SPACING.large,
 	},
 	header: {
-		flexDirection: "row",
-		justifyContent: "space-between",
+		flexDirection: 'row',
+		justifyContent: 'space-between',
 	},
 	logo: {
 		width: 131,
 		height: 44,
 	},
 	main: {
-		backgroundColor: "#f6f6f6",
+		backgroundColor: '#f6f6f6',
 		borderRadius: 12,
 		padding: SPACING.regular,
 	},
 	text: {
 		fontSize: FONT_SIZES.regular,
 		lineHeight: FONT_SIZES.regular * LINE_HEIGHT,
-		textAlign: "left",
+		textAlign: 'left',
 	},
 	textSmall: {
 		fontSize: FONT_SIZES.small,
@@ -127,22 +127,22 @@ const styles = StyleSheet.create({
 	textHeading: {
 		fontSize: FONT_SIZES.heading,
 		lineHeight: FONT_SIZES.heading * LINE_HEIGHT,
-		fontWeight: "bold",
+		fontWeight: 'bold',
 	},
 	textBold: {
-		fontWeight: "bold",
+		fontWeight: 'bold',
 	},
 	textItalic: {
-		fontStyle: "italic",
+		fontStyle: 'italic',
 	},
 	link: {
-		color: "blue",
-		textDecorationLine: "underline",
+		color: 'blue',
+		textDecorationLine: 'underline',
 	},
 	// Replace with <Stack /> component?
 	block: {
 		marginBottom: SPACING.regular,
-		alignSelf: "stretch",
+		alignSelf: 'stretch',
 	},
 	blockSpacingSmall: {
 		marginBottom: SPACING.small,
