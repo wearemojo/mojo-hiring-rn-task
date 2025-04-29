@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
 	randomId: {
 		fontSize: 10,
 		opacity: 0.3,
-	}
+	},
 });
 
 export default Footer;
