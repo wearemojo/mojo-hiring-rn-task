@@ -1,8 +1,8 @@
-import { StyleSheet, View, Text, Linking } from "react-native";
+import { StyleSheet, View, Text, Linking } from 'react-native';
 
-import { nanoid } from "./nanoid";
+import { nanoid } from './nanoid';
 
-const CAREERS_URL = String(new URL("/careers", "https://mojo.so"));
+const CAREERS_URL = String(new URL('/careers', 'https://mojo.so'));
 
 const Footer = () => {
 	return (
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
 	randomId: {
 		fontSize: 10,
 		opacity: 0.3,
-	}
+	},
 });
 
 export default Footer;
